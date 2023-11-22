@@ -8,3 +8,12 @@ function playMusic() {
   var audioPlayer = document.getElementById("music-player"); /*Play music*/
   audioPlayer.play();
 }
+
+function respoinsiveNavbar() {
+  var x = document.getElementsById("navbar");
+  if (x.className === "navbar") {
+      x.className += "  responsive";
+  } else {
+      x.className = "navbar";
+  }
+}
