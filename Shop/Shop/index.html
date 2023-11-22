@@ -14,13 +14,17 @@
   <section id="hero"> 
     <header>
       <nav>
-          <ul>
+          <ul class="navbar" id="navbar">
             <img src="images/Art1.png" class="logo" title="Company logo">
-            <p>Chill Coffee Shop</p>
-              <li><a href="#hero" class="active">HOME</a></li>
-              <li><a href="#menu">MENU</a></li>
-              <li><a href="#music">MUSIC</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+            <span id="banner">Chill Coffee Shop</span>
+              <a href="#hero" class="active"><li>HOME</li></a>
+              <a href="#menu"><li>MENU</li></a>
+              <a href="#music"><li>MUSIC</li></a>
+              <a href="#contact"><li>CONTACT</li></a>
+              <!-- menubutton shows up when screen shrinks -->
+              <a href="javascript:void(0);" class="icon" onclick="responiveNavbar()">
+                &#9776;
+            </a>
           </ul>
       </nav>
   </header>
@@ -76,16 +80,16 @@
     <section id="music">
 
       <h1>Music Menu</h1>
-        <button class="music-btn" onclick="changeMusic('musics/Relaxing Jazz Music Short.mp3')">Jazz</button>
-        <button class="music-btn" onclick="changeMusic('musics/Happy and Fun Pop.mp3')">Happy</button>
-        <button class="music-btn" onclick="changeMusic('musics/Happy and Fun Pop.mp3')">Rock</button>
-        <button class="music-btn" onclick="changeMusic('musics/Class Love song.mp3')">Classic</button>
-        <button class="music-btn" onclick="changeMusic('musics/BEST REGGAE MIX 2022 - RELAXING ROAD TRIP REGGAE SONG - NEW REGGAE PLAYLIST 2022  REGGAE COVER.mp3')">Reggae</button>
+        <button class="music-btn" onclick="changeMusic('musics/Alone_-_Color_Out.mp3')">Jazz</button>
+        <button class="music-btn" onclick="changeMusic('musics/tab - sake bomb.mp3')">Happy</button>
+        <button class="music-btn" onclick="changeMusic('musics/The_Deep_-_Anitek')">Rock</button>
+        <button class="music-btn" onclick="changeMusic('musics/Alone_-_Color_Out.mp3')">Classic</button>
+        <button class="music-btn" onclick="changeMusic('musics/tab - sake bomb.mp3')">Reggae</button>
         
         <button class="play-btn" onclick="playMusic()">Play</button>
         
         <audio id="music-player" controls>
-          <source src="D:/Py_programming/HTML proj/Exercise4/musics" type="audio/mpeg">
+          <source src="./musics" type="audio/mpeg">
         </audio>
         <a href="#hero" class="back-service">Back - Home</a>
     </section>

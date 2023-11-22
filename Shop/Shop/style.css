@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-  width: 100px; /* adjust the width as needed */
+  width: 15%; /* adjust the width as needed */
   height: auto;
   margin-right: 39px;
   margin-top: -69px;
@@ -78,13 +78,13 @@ nav a {
   font-size: 21px;
 
 }
-nav p {
+nav #banner {
   color: #141414;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 21px;
-  margin-right: 912px;
+  margin-right: 20vw;
 
 }
 
@@ -144,7 +144,7 @@ h1 span {
 #menu {
   background-color: transparent;
   width: 100%;
-  height:100vh;
+  height:auto;
 }
 
 #menu h1{
@@ -180,12 +180,14 @@ h1 span {
 
 .menu-item {
   text-align: center;
+  cursor: pointer;
 }
 
 .menu-item img {
   width: 300px;
   height: 300px;
   margin-top: 36px;
+  transition: 0.3s 0.05s ease-out box-shadow;
 }
 .menu-item img:hover{
   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red
@@ -362,3 +364,44 @@ p {
   line-height: 1.5;
 }
 /*added*/
+
+
+
+
+/* Add this CSS for responsive navigation */
+@media screen and (max-width: 768px) {
+  nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+
+  .nav-links li {
+    padding: 15px;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    order: -1;
+  }
+
+  .icon:hover + .nav-links {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
