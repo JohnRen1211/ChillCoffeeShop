@@ -1,0 +1,120 @@
+<!--Coffe shop html website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill coffee shop</title>
+  <link rel="icon" href="images/Art1.png">
+  <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+  <section id="hero"> 
+    <header>
+      <nav>
+          <ul>
+            <img src="images/Art1.png" class="logo" title="Company logo">
+            <p>Chill Coffee Shop</p>
+              <li><a href="#hero" class="active">HOME</a></li>
+              <li><a href="#menu">MENU</a></li>
+              <li><a href="#music">MUSIC</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+  </section>
+<!--Information about the front page-->
+  <section id="details">
+    <img src="images/about.png" class="LogoR" title="Coffee Cup">
+      <h1>Welcome to Chill Coffee<span> Shop</span></h1>
+      <p>"A cup of coffee shared with a friend is happiness tasted and time well spent" </p>
+      <li><a href="#menu">Today's Menu</a></li>
+  </section>
+<!--Main menu-->
+  <main>
+    <section id="menu">
+      <h1>Menu</h1>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/Americano.jpg" alt="menu 1">
+          <h2>Americano</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Barako.jpg" alt="menu 2">
+          <h2>Barako</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Cappuccino.jpg" alt="menu 3">
+          <h2>Capuccino</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Espresso.png" alt="menu 4">
+          <h2>Espresso</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Hotchoco.jpg" alt="menu 5">
+          <h2>Hot Chocolate</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Latte.png" alt="menu 6">
+          <h2>Latte</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Suman.jpg" alt="menu 7">
+          <h2>Suman</h2>
+        </div>
+        <div class="menu-item">
+          <img src="images/Pastries.png" alt="menu 8">
+          <h2>Assorted Pastries</h2>
+        </div>
+        <a href="#hero" class="back-service">Back</a>
+      </div>
+    </section>
+<!--Music player-->
+    <section id="music">
+
+      <h1>Music Menu</h1>
+        <button class="music-btn" onclick="changeMusic('musics/Relaxing Jazz Music Short.mp3')">Jazz</button>
+        <button class="music-btn" onclick="changeMusic('musics/Happy and Fun Pop.mp3')">Happy</button>
+        <button class="music-btn" onclick="changeMusic('musics/Happy and Fun Pop.mp3')">Rock</button>
+        <button class="music-btn" onclick="changeMusic('musics/Class Love song.mp3')">Classic</button>
+        <button class="music-btn" onclick="changeMusic('musics/BEST REGGAE MIX 2022 - RELAXING ROAD TRIP REGGAE SONG - NEW REGGAE PLAYLIST 2022  REGGAE COVER.mp3')">Reggae</button>
+        
+        <button class="play-btn" onclick="playMusic()">Play</button>
+        
+        <audio id="music-player" controls>
+          <source src="D:/Py_programming/HTML proj/Exercise4/musics" type="audio/mpeg">
+        </audio>
+        <a href="#hero" class="back-service">Back - Home</a>
+    </section>
+<!--Contact Section-->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you want to apply for a Job or comment about our shop feel free to contact us. Just fill up the form below.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+<!--About us section-->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to Jake's Coffee Shop! We are a cozy little coffee shop located in the heart of Manila city. Our mission is to provide our customers with the best coffee and pastries in town, while creating a warm and welcoming atmosphere. Come and visit us if you want a place to feel comfort and relax</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Chill Coffee Shop</p>
+  </footer>
+
+</body>
+
+</html>

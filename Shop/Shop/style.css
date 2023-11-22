@@ -1,0 +1,364 @@
+/* This is the css that used for home*/
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  font-family: cursive;
+}
+
+.logo {
+  width: 100px; /* adjust the width as needed */
+  height: auto;
+  margin-right: 39px;
+  margin-top: -69px;
+}
+
+.LogoR {
+  margin-left: 1319px;
+  margin-bottom: -219px;
+  float: right;
+}
+
+/* Hero */
+#hero {
+  background-color: transparent;
+  width: 100%;
+  height:100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  background: navajowhite;
+  overflow-x: hidden;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: brown;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 112px;
+  margin-top: 62px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #141414;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+
+}
+nav p {
+  color: #141414;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  margin-right: 912px;
+
+}
+
+/* Details */
+h1 span {
+  color: brown;
+}
+#details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+  border: none;
+}
+
+#details h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#details p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+#details a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: burlywood;
+  color: #070707;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+#details a:hover {
+  background-color: #333;
+}
+
+#details-pic:hover .profile {
+  transform: translateX(-20px);
+  transition: transform 0.5s ease-out;
+}
+
+#details-pic:hover .shape {
+  transform: translateY(-20px);
+  transition: transform 0.5s ease-out;
+}
+
+
+/*Menu section*/
+#menu {
+  background-color: transparent;
+  width: 100%;
+  height:100vh;
+}
+
+#menu h1{
+  padding: 10px 20px;
+  background-color: black;
+  color: burlywood;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+#menu h2{
+  text-align: center;
+}
+
+#menu a {
+  padding: 3px 9px;
+  background-color: black;
+  color: burlywood;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  margin-top: -39px;
+}
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item img {
+  width: 300px;
+  height: 300px;
+  margin-top: 36px;
+}
+.menu-item img:hover{
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red
+}
+.back-service {
+background-color: transparent; /* color button */
+color: #141414;
+width: 139px;
+font-weight: bold;
+
+}
+
+/*Music section*/
+
+#music h1{
+  padding: 10px 20px;
+  background-color: darkslategrey;
+  color: burlywood;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+#music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: transparent;
+  width: 100%;
+  height:100vh;
+  background-image: url("images/BgM.jpg"); /* set the background image */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#music a {
+  padding: 3px 6px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;  
+  margin-top: 59px;
+  margin-right: 1611px;
+}
+
+.music-btn {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.music-btn:hover {
+  background-color: #3e8e41;
+}
+
+.play-btn {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: #007A99;
+}
+
+#audio-player {
+  width: 100%;
+  margin-top: 20px;
+}
+/*Contact Section*/
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height:100vh;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #007A99;
+}
+
+/*About us section*/
+
+#about {
+  background-color: #F5F5F5;
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+/*added*/
